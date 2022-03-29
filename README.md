@@ -8,7 +8,8 @@ Link docs: https://sequelize.org/master/manual/migrations.html
   yarn add sequelize
 ```
 
-2: Thêm file .sequelizerc và chạy câu lệnh: node_modules/.bin/sequelize init.
+2: Thêm file .sequelizerc và chạy câu lệnh: `node_modules/.bin/sequelize init`.
+
   Nội dung file .sequelizerc
 
 ```bash
