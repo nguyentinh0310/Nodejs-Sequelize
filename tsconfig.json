@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "rootDir": "./",
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "typeRoots": ["./src/types"],
+    "paths": {
+      "*": ["node_modules/*"],
+      "@modules/*": ["modules/*"],
+      "@core/*": ["core/*"]
+    },
+    "sourceMap": true,
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+  },
+  "exclude": ["node_modules"]
+}
