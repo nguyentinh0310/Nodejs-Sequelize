@@ -136,5 +136,15 @@ class ProjectService {
 
     await project.destroy();
   }
+
+  public async assginUserToGroup(model: ProjectUserDto): Promise<IProjectUser> {
+    await db.project_user.destroy({
+      where: { projectId: model.projectId },
+    });
+
+    const result = await db.project_user.bulkCreate(model);
+
+    return result;
+  }
 }
 export default ProjectService;

@@ -18,7 +18,7 @@ module.exports = (sequelize: any, DataTypes: any) => {
     static associate(models: any) {
       // define association here
       Project.belongsTo(models.customer)
-      Project.belongsToMany(models.user, {through: 'project_user'})
+      Project.belongsToMany(models.user, {through: 'project_user', foreignKey: "projectId"})
     }
   }
   Project.init(

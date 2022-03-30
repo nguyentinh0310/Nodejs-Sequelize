@@ -112,5 +112,18 @@ class ProjectControler {
       next(error);
     }
   };
+
+  public assginUserToGroup = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ) => {
+    try {
+     const result = await this.projectService.assginUserToGroup(req.body);
+      res.status(200).json(result);
+    } catch (error) {
+      next(error);
+    }
+  };
 }
 export default ProjectControler;

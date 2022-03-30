@@ -40,9 +40,9 @@ class CustommerService {
     );
     console.log(currentArr);
     console.log("persists", persists);
-    // const newcustomer = await db.customer.bulkCreate(persists);
+    const newcustomer = await db.customer.bulkCreate(persists);
 
-    return persists;
+    return newcustomer;
   }
 
   public async updateCustomer(
