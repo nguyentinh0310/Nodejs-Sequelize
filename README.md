@@ -1,4 +1,4 @@
-Link docs: https://sequelize.org/master/manual/migrations.html
+##### Link docs: https://sequelize.org/master/manual/migrations.html
 
 1: Cài đặt các thư viện: sequlize-cli, sequelize và mysql2.
 
