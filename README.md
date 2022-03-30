@@ -8,8 +8,6 @@ Link docs: https://sequelize.org/master/manual/migrations.html
   yarn add sequelize
 ```
 
-2: Thêm file .sequelizerc và chạy câu lệnh: `node_modules/.bin/sequelize init`.
-
   Nội dung file .sequelizerc
 
 ```bash
@@ -21,6 +19,9 @@ const path = require('path');
     'seeders-path': path.resolve('./src', 'seeders')
   }
 ```
+
+2: Thêm file .sequelizerc và chạy câu lệnh: `node_modules/.bin/sequelize init`.
+
 3: Tạo model: `yarn sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string`
 
 4: Tạo migrations: `yarn sequelize-cli db:migrate`
